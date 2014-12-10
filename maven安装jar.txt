@@ -5,3 +5,5 @@ diamond-client
 
 mvn install:install-file -Dfile=D:\maven\jltddl\diamond\diamond-client\target\diamond-client-2.0.5.4.taocode-SNAPSHOT.jar -DgroupId=com.taobao.diamond -DartifactId=diamond-client -Dversion=2.0.5.4.taocode-SNAPSHOT -Dpackaging=jar
 <version>2.0.5.4.taocode-SNAPSHOT</version>
+
+mvn install:install-file -Dfile=D:\maven\jltddl\diamond\diamond-client\target\diamond-client-2.0.5.3.taocode-SNAPSHOT.jar -DgroupId=com.taobao.diamond -DartifactId=diamond-client -Dversion=2.0.5.3.taocode-SNAPSHOT -Dpackaging=jar
