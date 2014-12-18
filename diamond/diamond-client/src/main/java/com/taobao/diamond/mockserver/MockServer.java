@@ -34,14 +34,16 @@ public class MockServer {
     private static volatile boolean testMode = false;
 
 
-    public static void setUpMockServer() {
+    
+
+	public static void setUpMockServer() {
         testMode = true;
     }
 
 
-    public static void tearDownMockServer() {
+    public static void tearDownMockServer() {        
         staticConfigInfos.clear();
-        DiamondClientFactory.getSingletonDiamondSubscriber().close();
+        DiamondClientFactory.getSingletonDiamondSubscriber(Constants.DEFAULT_DIAMOND_CLUSTER).close();
         testMode = false;
     }
 
