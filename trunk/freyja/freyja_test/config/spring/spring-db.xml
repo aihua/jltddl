@@ -18,9 +18,6 @@
 
 	<bean id="parentDataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		destroy-method="close">
-
-
-
 		<!-- 配置初始化大小、最小、最大 -->
 		<property name="initialSize" value="20" />
 		<property name="minIdle" value="20" />
@@ -50,19 +47,19 @@
 			value="20" />
 	</bean>
 
-	<bean id="pdk_game_0" parent="parentDataSource">
+	<bean id="pdk_game_0" parent="parentDataSource" destroy-method="close">
 		<property name="url" value="${mysql0.url}" />
 		<property name="username" value="${mysql0.user}" />
 		<property name="password" value="${mysql0.password}" />
 	</bean>
 
-	<bean id="pdk_game_1" parent="parentDataSource">
+	<bean id="pdk_game_1" parent="parentDataSource" destroy-method="close">
 		<property name="url" value="${mysql1.url}" />
 		<property name="username" value="${mysql1.user}" />
 		<property name="password" value="${mysql1.password}" />
 	</bean>
 
-	<bean id="baseDataSource" parent="parentDataSource">
+	<bean id="baseDataSource" parent="parentDataSource" destroy-method="close">
 		<property name="url" value="${mysql.url}" />
 		<property name="username" value="${mysql.user}" />
 		<property name="password" value="${mysql.password}" />
@@ -90,7 +87,7 @@
 	<bean id="fryjaTemplate" class="org.freyja.jdbc.core.FreyjaJdbcTemplate">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 		<property name="packagesToScan" value="com.guyu.data.bean" />
-				<property name="shardingStrategy" ref="myShardingStrategy" />
+		<property name="shardingStrategy" ref="myShardingStrategy" />
 		
 		<property name="freyjaProperties">
 			<value>

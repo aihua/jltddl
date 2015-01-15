@@ -1,15 +1,5 @@
-﻿# MySQL-Front 5.1  (Build 4.13)
-
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE */;
-/*!40101 SET SQL_MODE='STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES */;
-/*!40103 SET SQL_NOTES='ON' */;
-
-
-# Host: localhost    Database: freyja_0
-# ------------------------------------------------------
-# Server version 5.5.25a
-
+DROP DATABASE IF EXISTS `freyja_0`;
+CREATE DATABASE `freyja_0` ;
 USE `freyja_0`;
 
 #
@@ -27,7 +17,3 @@ CREATE TABLE `t_user_0` (
 #
 # Dumping data for table t_user_0
 #
-
-
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
