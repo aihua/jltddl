@@ -1,17 +1,7 @@
-﻿# MySQL-Front 5.1  (Build 4.13)
 
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE */;
-/*!40101 SET SQL_MODE='STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES */;
-/*!40103 SET SQL_NOTES='ON' */;
-
-
-# Host: localhost    Database: freyja
-# ------------------------------------------------------
-# Server version 5.5.25a
 
 DROP DATABASE IF EXISTS `freyja`;
-CREATE DATABASE `freyja` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE `freyja` ;
 USE `freyja`;
 
 #
@@ -52,5 +42,4 @@ CREATE TABLE `t_user_prop` (
 #
 
 
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+
